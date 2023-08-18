@@ -1,0 +1,37 @@
+.sectionCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 24px;
+
+    .icon {
+        width: 61px;
+        height: 61px;
+    }
+
+    .sectionDetails {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        margin-left: 20px;
+        gap: 5px;
+
+        .title {
+            color: var(--primary-color);
+            font-size: 18px;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        .description {
+            color: var(--text-color);
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+}
