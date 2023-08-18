@@ -1,0 +1,119 @@
+.header {
+    width: var(--header-width);
+    margin: 0 auto;
+
+    padding: 30px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--primary-color);
+
+    .logo {
+        font-size: 34px;
+
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+
+        color: inherit;
+    }
+
+    .menu {
+
+        .menuList {
+            list-style: none;
+            display: flex;
+
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+
+            color: inherit;
+
+            .menuItem {
+                position: relative;
+                cursor: pointer;
+
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+
+                display: flex;
+                justify-content: center;
+                align-items: end;
+
+                svg {
+                    margin-left: 5px;
+
+                    font-size: 14px;
+                    font-weight: 900;
+                    line-height: 14px;
+                }
+
+                &:hover {
+                    .dropdown {
+                        transition: all 0.3s ease-in-out;
+
+                        animation: dropdown 0.3s ease-in-out;
+                        display: block;
+
+                        @keyframes dropdown {
+                            0% {
+                                opacity: 0;
+                                transform: translateY(-10px);
+                            }
+
+                            100% {
+                                opacity: 1;
+                                transform: translateY(0);
+                            }
+                        }
+                    }
+                }
+
+                .dropdown {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+
+                    z-index: 1;
+
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+                    border-radius: 5px;
+                    border: 1px solid var(--stroke-color);
+
+                    width: 150px;
+
+                    .dropdownList {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+
+                        .dropdownItem {
+                            display: block;
+                            padding: 10px;
+
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+
+                            line-height: 15px;
+                            text-transform: uppercase;
+
+                            color: inherit;
+
+                            &:hover {
+                                color: var(--primary-color);
+                                background-color: var(--stroke-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
