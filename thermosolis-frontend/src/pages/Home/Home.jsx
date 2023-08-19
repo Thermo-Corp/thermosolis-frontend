@@ -5,7 +5,9 @@ import Header from '../../components/Header/Header';
 import TopLevel from '../../components/TopLevel/TopLevel';
 import Banner from '../../components/Banner/Banner';
 import RectangleContainer from '../../components/Container/Square/RectangleContainer';
+import InlineIconDetails from '../../components/IconDetails/InlineIconDetails/InlineIconDetails';
 import SectionCard from '../../components/Section/SectionCard/SectionCard';
+
 
 function Home() {
     return (
@@ -13,16 +15,16 @@ function Home() {
             <TopLevel />
             <Header />
             <Banner />
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ display: "flex", justifyContent: "center", height: "410px" }}>
 
                 <RectangleContainer backgroundColor="var(--primary-color)" >
-                    <span style={{ fontSize: "100px", fontWeight: "600", lineHeight: "84px", color: "#EBECEE" }}>147</span>
-                    <p style={{ color: "#EBECEE", fontSize: "22px", fontWeight: "400", lineHeight: "22px" }}>Projects Completed</p>
+                    <span style={{ fontSize: "100px", fontWeight: "700", lineHeight: "84px", color: "#FFF" }}>147</span>
+                    <p style={{ color: "#FFF", fontSize: "22px", fontWeight: "400", lineHeight: "22px" }}>Projects Completed</p>
                 </RectangleContainer>
 
                 <RectangleContainer backgroundColor="var(--secondary-color)" >
-                    <span style={{ fontSize: "100px", fontWeight: "600", lineHeight: "84px", color: "#EBECEE" }}>25+</span>
-                    <p style={{ color: "#EBECEE", fontSize: "22px", fontWeight: "400", lineHeight: "22px" }}>Years of Experience</p>
+                    <span style={{ fontSize: "100px", fontWeight: "700", lineHeight: "84px", color: "#FFF" }}>25+</span>
+                    <p style={{ color: "#FFF", fontSize: "22px", fontWeight: "400", lineHeight: "22px" }}>Years of Experience</p>
                 </RectangleContainer>
 
                 <RectangleContainer width="501px" height="549px"
@@ -40,26 +42,36 @@ function Home() {
                         We Construct and Manage Places and Infrastructures
                     </span>
 
-                    <SectionCard
+                    <InlineIconDetails
                         title='General Contract'
                         description='Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum'
                         icon={<img src={process.env.PUBLIC_URL + "/images/engineer.png"} alt="General Contract" />}
                     />
 
-                    <SectionCard
+                    <InlineIconDetails
                         title='Project Planning'
                         description='Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum'
                         icon={<img src={process.env.PUBLIC_URL + "/images/ruler.png"} alt="Project Planning" />}
                     />
-                    
-                    <SectionCard
+
+                    <InlineIconDetails
                         title='Refurbishment'
                         description='Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum'
                         icon={<img src={process.env.PUBLIC_URL + "/images/measuring-tool.png"} alt="Refurbishment" />}
                     />
                 </RectangleContainer>
             </div>
-        </div>
+            <div>
+                <SectionCard
+                    title="With our knowledge we guarente success"
+                    subtitle="Fusce id hendrerit lectus. Morbi vitae tortor sed turpis feugiat congue"
+                    description="Cras tincidunt tellus at mi tristique rhoncus. Etiam dapibus rutrum leo consectetur accumsan. Vivamus viverra ante turpis, dignissim condimentum elit egestas sit amet. Phasellus faucibus pellentesque"
+                    image={<img src={process.env.PUBLIC_URL + "/images/about-us.png"} alt="With our knowledge we guarente success" />}
+                    route="/about-us"
+                    name="About Us"
+                />
+            </div>
+        </div >
     );
 };
 
