@@ -8,6 +8,7 @@ import RectangleContainer from '../../components/Container/Square/RectangleConta
 import InlineIconDetails from '../../components/IconDetails/InlineIconDetails/InlineIconDetails';
 import SectionCard from '../../components/Section/SectionCard/SectionCard';
 import SectionServices from '../../components/Section/SectionServices/SectionServices';
+import SectionProjects from '../../components/Section/SectionProjects/SectionProjects';
 
 function Home() {
     return (
@@ -93,6 +94,41 @@ function Home() {
                             description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
                             route: "/refurbishment",
                         },
+                    ]}
+                />
+            </div>
+
+            <div>
+                <SectionProjects
+                    title="Our Special Projects"
+                    route="/projects"
+                    name="Our Works"
+                    projects={[
+                        {
+                            image: "/images/projects/project-1.png",
+                            title: "Project Name",
+                            description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                        },
+                        {
+                            image: "/images/projects/project-2.png",
+                            title: "Project Name",
+                            description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                        },
+                        {
+                            image: "/images/projects/project-3.png",
+                            title: "Project Name",
+                            description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                        },
+                        {
+                            image: "/images/projects/project-4.png",
+                            title: "Project Name",
+                            description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                        },
+                        {
+                            image: "/images/projects/project-5.png",
+                            title: "Project Name",
+                            description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                        }
                     ]}
                 />
             </div>
