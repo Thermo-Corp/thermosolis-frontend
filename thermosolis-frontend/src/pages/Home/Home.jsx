@@ -7,7 +7,7 @@ import Banner from '../../components/Banner/Banner';
 import RectangleContainer from '../../components/Container/Square/RectangleContainer';
 import InlineIconDetails from '../../components/IconDetails/InlineIconDetails/InlineIconDetails';
 import SectionCard from '../../components/Section/SectionCard/SectionCard';
-
+import SectionServices from '../../components/Section/SectionServices/SectionServices';
 
 function Home() {
     return (
@@ -61,14 +61,39 @@ function Home() {
                     />
                 </RectangleContainer>
             </div>
-            <div>
-                <SectionCard
-                    title="With our knowledge we guarente success"
-                    subtitle="Fusce id hendrerit lectus. Morbi vitae tortor sed turpis feugiat congue"
-                    description="Cras tincidunt tellus at mi tristique rhoncus. Etiam dapibus rutrum leo consectetur accumsan. Vivamus viverra ante turpis, dignissim condimentum elit egestas sit amet. Phasellus faucibus pellentesque"
-                    image={<img src={process.env.PUBLIC_URL + "/images/about-us.png"} alt="With our knowledge we guarente success" />}
-                    route="/about-us"
-                    name="About Us"
+
+            <SectionCard
+                title="With our knowledge we guarente success"
+                subtitle="Fusce id hendrerit lectus. Morbi vitae tortor sed turpis feugiat congue"
+                description="Cras tincidunt tellus at mi tristique rhoncus. Etiam dapibus rutrum leo consectetur accumsan. Vivamus viverra ante turpis, dignissim condimentum elit egestas sit amet. Phasellus faucibus pellentesque"
+                image={<img src={process.env.PUBLIC_URL + "/images/about-us.png"} alt="With our knowledge we guarente success" />}
+                route="/about-us"
+                name="About Us"
+            />
+
+            <div style={{ margin: "50px 0" }}>
+                <SectionServices
+                    backgroundImage={process.env.PUBLIC_URL + "/images/services-bg.png"}
+                    services={[
+                        {
+                            icon: process.env.PUBLIC_URL + "/images/construction.png",
+                            title: "Research & Analysis",
+                            description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                            route: "/general-contract",
+                        },
+                        {
+                            icon: process.env.PUBLIC_URL + "/images/houses.png",
+                            title: "Industry Development",
+                            description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                            route: "/project-planning",
+                        },
+                        {
+                            icon: process.env.PUBLIC_URL + "/images/industrial.png",
+                            title: "Production Launch",
+                            description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                            route: "/refurbishment",
+                        },
+                    ]}
                 />
             </div>
         </div >

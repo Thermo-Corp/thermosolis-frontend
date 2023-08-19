@@ -8,7 +8,6 @@
 
     .textContainer {
         width: 686px;
-        height: 429px;
 
         .name {
             color: var(--secondary-color);
@@ -58,7 +57,7 @@
 
     .imageContainer {
         width: 500px;
-        height: 600px;
+        height: auto;
 
         .image {
             width: 100%;
