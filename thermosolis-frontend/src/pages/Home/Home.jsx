@@ -11,6 +11,8 @@ import SectionServices from '../../components/Section/SectionServices/SectionSer
 import SectionProjects from '../../components/Section/SectionProjects/SectionProjects';
 import SectionMap from '../../components/Section/SectionMap/SectionMap';
 import SectionTestimonials from '../../components/Section/SectionTestimonials/SectionTestimonials';
+import Footer from '../../components/Footer/Footer';
+
 
 function Home() {
     return (
@@ -159,6 +161,9 @@ function Home() {
                     }
                 ]}
             />
+            <div style={{ marginTop: "111px" }}>
+                <Footer />
+            </div>
         </div >
     );
 };
