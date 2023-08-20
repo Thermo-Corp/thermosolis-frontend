@@ -10,6 +10,7 @@ import SectionCard from '../../components/Section/SectionCard/SectionCard';
 import SectionServices from '../../components/Section/SectionServices/SectionServices';
 import SectionProjects from '../../components/Section/SectionProjects/SectionProjects';
 import SectionMap from '../../components/Section/SectionMap/SectionMap';
+import SectionTestimonials from '../../components/Section/SectionTestimonials/SectionTestimonials';
 
 function Home() {
     return (
@@ -31,7 +32,7 @@ function Home() {
 
                 <RectangleContainer width="501px" height="549px"
                     style={{
-                        borderTop: "7px solid #001ED3",
+                        borderTop: "7px solid var(--tertiary-color)",
                         position: "relative",
                         display: "flex",
                         justifyContent: "flex-start",
@@ -65,12 +66,12 @@ function Home() {
             </div>
 
             <SectionCard
+                route="/about-us"
+                name="About Us"
                 title="With our knowledge we guarente success"
                 subtitle="Fusce id hendrerit lectus. Morbi vitae tortor sed turpis feugiat congue"
                 description="Cras tincidunt tellus at mi tristique rhoncus. Etiam dapibus rutrum leo consectetur accumsan. Vivamus viverra ante turpis, dignissim condimentum elit egestas sit amet. Phasellus faucibus pellentesque"
                 image={<img src={process.env.PUBLIC_URL + "/images/about-us.png"} alt="With our knowledge we guarente success" />}
-                route="/about-us"
-                name="About Us"
             />
 
             <div style={{ margin: "50px 0" }}>
@@ -100,9 +101,9 @@ function Home() {
             </div>
 
             <SectionProjects
-                title="Our Special Projects"
                 route="/projects"
                 name="Our Works"
+                title="Our Special Projects"
                 projects={[
                     {
                         image: "/images/projects/project-1.png",
@@ -132,9 +133,32 @@ function Home() {
                 ]}
             />
 
-            <div style={{ margin: "100px 0" }}>
+            <div style={{ margin: "100px 0 50px 0" }}>
                 <SectionMap image="/images/map.png" />
             </div>
+
+            <SectionTestimonials
+                route="/testimonials"
+                name="Testimonials"
+                title="Our Clients Say"
+                testimonials={[
+                    {
+                        name: "Katy Grey",
+                        title: "CEO Grey Industries",
+                        description: "lorem 51 dolor sit amet, consectetur adipiscing elit. Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum. lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                    },
+                    {
+                        name: "John Doe",
+                        title: "CEO Grey Industries",
+                        description: "Quisque 65 erat ac orci blandit, in sollicitudin tellus vestibulum",
+                    },
+                    {
+                        name: "John Doe",
+                        title: "CEO",
+                        description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                    }
+                ]}
+            />
         </div >
     );
 };

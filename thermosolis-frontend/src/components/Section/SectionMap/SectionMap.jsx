@@ -35,7 +35,7 @@ function SectionMap({ image }) {
 
                 <ContactDetails
                     title="Company Phone"
-                    details={["+1 800 123 4567", "+1 800 123 4567"]}
+                    details={["+1 801 123 4567", "+1 800 123 4567"]}
                     muiIcon={<LocalPhoneIcon />}
                     iconStyle={{ background: "var(--secondary-color)" }}
                     type="phone"
@@ -43,9 +43,9 @@ function SectionMap({ image }) {
 
                 <ContactDetails
                     title="Company Email"
-                    details={["example@gmail.com", "example@gmail.com"]}
+                    details={["example1@gmail.com", "example@gmail.com"]}
                     muiIcon={<TextsmsIcon />}
-                    iconStyle={{ background: "#001ED3" }}
+                    iconStyle={{ background: "var(--tertiary-color)" }}
                     type="email"
                 />
 
