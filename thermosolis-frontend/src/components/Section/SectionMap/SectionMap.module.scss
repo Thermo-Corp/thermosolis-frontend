@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .banner {
+        width: 100%;
+
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .rectangleContainer {
+        width: var(--header-width);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+
+        .rectangleContent {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            padding: 76px 40px 70px 50px;
+
+            .title {
+                color: var(--text-color);
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 15px;
+                text-transform: uppercase;
+
+                margin-bottom: 10px;
+            }
+
+            .addresse {
+                color: #00215B;
+
+                font-size: 34px;
+                font-weight: 500;
+                line-height: 38px;
+            }
+        }
+    }
+}
