@@ -9,6 +9,7 @@ import InlineIconDetails from '../../components/IconDetails/InlineIconDetails/In
 import SectionCard from '../../components/Section/SectionCard/SectionCard';
 import SectionServices from '../../components/Section/SectionServices/SectionServices';
 import SectionProjects from '../../components/Section/SectionProjects/SectionProjects';
+import SectionMap from '../../components/Section/SectionMap/SectionMap';
 
 function Home() {
     return (
@@ -98,39 +99,41 @@ function Home() {
                 />
             </div>
 
-            <div>
-                <SectionProjects
-                    title="Our Special Projects"
-                    route="/projects"
-                    name="Our Works"
-                    projects={[
-                        {
-                            image: "/images/projects/project-1.png",
-                            title: "Project Name",
-                            description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
-                        },
-                        {
-                            image: "/images/projects/project-2.png",
-                            title: "Project Name",
-                            description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
-                        },
-                        {
-                            image: "/images/projects/project-3.png",
-                            title: "Project Name",
-                            description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
-                        },
-                        {
-                            image: "/images/projects/project-4.png",
-                            title: "Project Name",
-                            description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
-                        },
-                        {
-                            image: "/images/projects/project-5.png",
-                            title: "Project Name",
-                            description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
-                        }
-                    ]}
-                />
+            <SectionProjects
+                title="Our Special Projects"
+                route="/projects"
+                name="Our Works"
+                projects={[
+                    {
+                        image: "/images/projects/project-1.png",
+                        title: "Project Name",
+                        description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                    },
+                    {
+                        image: "/images/projects/project-2.png",
+                        title: "Project Name",
+                        description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                    },
+                    {
+                        image: "/images/projects/project-3.png",
+                        title: "Project Name",
+                        description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                    },
+                    {
+                        image: "/images/projects/project-4.png",
+                        title: "Project Name",
+                        description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                    },
+                    {
+                        image: "/images/projects/project-5.png",
+                        title: "Project Name",
+                        description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                    }
+                ]}
+            />
+
+            <div style={{ margin: "100px 0" }}>
+                <SectionMap image="/images/map.png" />
             </div>
         </div >
     );

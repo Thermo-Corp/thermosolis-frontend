@@ -1,0 +1,56 @@
+.companyPhone {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+
+    padding: 50px;
+
+    .icon {
+        color: var(--white-color);
+        background-color: var(--secondary-color);
+
+        padding: 7px;
+
+        width: 65px;
+        height: 65px;
+    }
+
+    .phone {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        flex-direction: column;
+        margin-left: 20px;
+
+        .title {
+            color: var(--text-color);
+
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 15px;
+            text-transform: uppercase;
+
+            margin-bottom: 10px;
+        }
+
+        .number, .email {
+            color: var(--primary-color);
+
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 26px;
+        }
+
+        .email {
+            text-decoration: none;
+
+            &:hover {
+                transition: all 0.3s ease-in-out;
+                color: var(--secondary-color);
+            }
+        }
+    }
+
+}
