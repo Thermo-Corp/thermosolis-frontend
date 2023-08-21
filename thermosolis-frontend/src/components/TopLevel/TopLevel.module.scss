@@ -17,13 +17,17 @@
         align-items: flex-start;
         gap: 40px;
 
-
-        span {
+        .linkItem {
             font-size: 14px;
             font-style: normal;
+            
             font-weight: 300;
             line-height: 15px;
             text-transform: uppercase;
+        
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 

@@ -64,7 +64,6 @@
                                 opacity: 0;
                                 transform: translateY(-10px);
                             }
-
                             100% {
                                 opacity: 1;
                                 transform: translateY(0);
@@ -84,10 +83,10 @@
                     background-color: var(--white-color);
                     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-                    border-radius: 5px;
-                    border: 1px solid var(--stroke-color);
+                    border-radius: 2px;
 
-                    width: 150px;
+                    width: max-content;
+                    min-width: 100%;
 
                     .dropdownList {
                         list-style: none;
@@ -100,7 +99,7 @@
 
                             font-size: 14px;
                             font-style: normal;
-                            font-weight: 400;
+                            font-weight: 600;
 
                             line-height: 15px;
                             text-transform: uppercase;
@@ -108,7 +107,7 @@
                             color: var(--primary-color);
 
                             &:hover {
-                                color: var(--primary-color);
+                                color: var(--secondary-color);
                                 background-color: var(--stroke-color);
                             }
                         }
