@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/thermosolis-frontend/static/css/main.62e1728f.css",
-    "main.js": "/thermosolis-frontend/static/js/main.39c5cc7d.js",
+    "main.css": "/thermosolis-frontend/static/css/main.2d1a7e1a.css",
+    "main.js": "/thermosolis-frontend/static/js/main.59f16052.js",
     "static/js/787.9ed464e4.chunk.js": "/thermosolis-frontend/static/js/787.9ed464e4.chunk.js",
     "static/media/home-banner.png": "/thermosolis-frontend/static/media/home-banner.b8efbea5cde36caa756e.png",
     "index.html": "/thermosolis-frontend/index.html",
-    "main.62e1728f.css.map": "/thermosolis-frontend/static/css/main.62e1728f.css.map",
-    "main.39c5cc7d.js.map": "/thermosolis-frontend/static/js/main.39c5cc7d.js.map",
+    "main.2d1a7e1a.css.map": "/thermosolis-frontend/static/css/main.2d1a7e1a.css.map",
+    "main.59f16052.js.map": "/thermosolis-frontend/static/js/main.59f16052.js.map",
     "787.9ed464e4.chunk.js.map": "/thermosolis-frontend/static/js/787.9ed464e4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62e1728f.css",
-    "static/js/main.39c5cc7d.js"
+    "static/css/main.2d1a7e1a.css",
+    "static/js/main.59f16052.js"
   ]
 }
