@@ -22,7 +22,7 @@ function Banner() {
                     Créons ensemble un espace où le confort devient réalité.
                 </p>
                 <Button variant="contained" >
-                    En savoir plus
+                    En savoir plus &nbsp;
                     <ArrowRightAltIcon />
                 </Button>
             </div>

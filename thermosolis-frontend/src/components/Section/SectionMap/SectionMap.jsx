@@ -28,22 +28,22 @@ function SectionMap({ image }) {
                     }}
                 >
                     <div className={styles.rectangleContent}>
-                        <span className={styles.title}>Company Address</span>
-                        <span className={styles.addresse}>Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA</span>
+                        <span className={styles.title}>Adresse de l'entreprise</span>
+                        <span className={styles.addresse}>203 Rue de la Rive, 42320 La Grand-Croix</span>
                     </div>
                 </RectangleContainer>
 
                 <ContactDetails
-                    title="Company Phone"
-                    details={["+1 801 123 4567", "+1 800 123 4567"]}
+                    title="Téléphone de l'entreprise"
+                    details={["+33 6 60 59 98 35", "+33 X XX XX XX XX"]}
                     muiIcon={<LocalPhoneIcon />}
                     iconStyle={{ background: "var(--secondary-color)" }}
                     type="phone"
                 />
 
                 <ContactDetails
-                    title="Company Email"
-                    details={["example1@gmail.com", "example@gmail.com"]}
+                    title="E-mail de l'entreprise"
+                    details={["contact@thermosolis.fr", "------@thermosolis.fr"]}
                     muiIcon={<TextsmsIcon />}
                     iconStyle={{ background: "var(--tertiary-color)" }}
                     type="email"

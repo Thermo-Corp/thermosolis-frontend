@@ -9,7 +9,7 @@ function QuickLinks({ title, links }) {
             <span className={styles.title}>{title}</span>
             <div className={styles.links}>
                 {links.map((link, _) => (
-                    <a key={link} className={styles.link} href={link.href}>{link.title}</a>
+                    <a key={link.href} className={styles.link} href={link.href}>{link.title}</a>
                 ))}
             </div>
         </div>
