@@ -19,7 +19,7 @@ function SectionProjects({ title, route, name, projects }) {
 
             <div className={styles.projectsContainer}>
                 {projects.map((project, index) => (
-                    <div key={project.title} className={`${styles.project} ${index === 0 ? styles.bigImage : ''}`}>
+                    <div key={project.description} className={`${styles.project} ${index === 0 ? styles.bigImage : ''}`}>
                         <div className={styles.projectImage}>
                             <img src={process.env.PUBLIC_URL + project.image} alt={project.title} />
                         </div>

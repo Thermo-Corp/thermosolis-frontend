@@ -21,8 +21,8 @@ function Footer() {
                     <span className={styles.logo}>Thermosolis</span>
 
                     <div className={styles.phoneContainer}>
-                        <span className={styles.title}>Call Us Today</span>
-                        <a className={styles.phone} href="tel:+1-202-555-0156">+1-202-555-0156</a>
+                        <span className={styles.title}>Appelez-nous</span>
+                        <a className={styles.phone} href="tel:+33 6 60 59 98 35">+33 6 60 59 98 35</a>
                     </div>
                     <div className={styles.socialMedia}>
                         <TwitterIcon className={styles.icon} />
@@ -31,7 +31,7 @@ function Footer() {
                         <InstagramIcon className={styles.icon} />
                     </div>
 
-                    <span className={styles.slogan}>With our knowledge we guarantee success</span>
+                    <span className={styles.slogan}>Créons ensemble un espace où le confort devient réalité.</span>
                 </div>
             </div>
             <div className={styles.rightContainer}>
@@ -57,10 +57,10 @@ function Footer() {
                         ]}
                     />
                     <div className={styles.footerContact}>
-                        <span className={styles.title}>Contact Us</span>
+                        <span className={styles.title}>Contactez-nous</span>
                         <span className={styles.subtitle}>Thermosolis</span>
-                        <span className={styles.address}>1234 Street Name, City Name, United States</span>
-                        <span className={styles.phone}>+1-202-555-0156</span>
+                        <span className={styles.address}>203 Rue de la Rive, 42320 La Grand-Croix</span>
+                        <a className={styles.phone} href="tel:+33 6 60 59 98 35">+33 6 60 59 98 35</a>
                         <a className={styles.email} href="contact@thermosolis.fr">contact@thermosolis.fr</a>
                     </div>
                 </div>

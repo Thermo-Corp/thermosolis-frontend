@@ -24,7 +24,7 @@ function SectionCard({ title, subtitle, description, image, route, name }) {
                 <br />
 
                 <Button variant="contained" style={{ marginTop: "50px" }} route={route} >
-                    Learn More
+                    En savoir plus &nbsp;
                     <ArrowRightAltIcon />
                 </Button>
             </div>

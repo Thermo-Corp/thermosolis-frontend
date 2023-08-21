@@ -24,15 +24,15 @@ function Home() {
 
                 <RectangleContainer backgroundColor="var(--primary-color)" >
                     <span style={{ fontSize: "100px", fontWeight: "700", lineHeight: "84px", color: "#FFF" }}>147</span>
-                    <p style={{ color: "#FFF", fontSize: "22px", fontWeight: "400", lineHeight: "22px" }}>Projects Completed</p>
+                    <p style={{ color: "#FFF", fontSize: "22px", fontWeight: "400", lineHeight: "22px" }}>Projets réalisés</p>
                 </RectangleContainer>
 
                 <RectangleContainer backgroundColor="var(--secondary-color)" >
                     <span style={{ fontSize: "100px", fontWeight: "700", lineHeight: "84px", color: "#FFF" }}>25+</span>
-                    <p style={{ color: "#FFF", fontSize: "22px", fontWeight: "400", lineHeight: "22px" }}>Years of Experience</p>
+                    <p style={{ color: "#FFF", fontSize: "22px", fontWeight: "400", lineHeight: "22px" }}>Années d'expérience</p>
                 </RectangleContainer>
 
-                <RectangleContainer width="501px" height="549px"
+                <RectangleContainer width="501px" height="fit-content"
                     style={{
                         borderTop: "7px solid var(--tertiary-color)",
                         position: "relative",
@@ -44,24 +44,24 @@ function Home() {
                     }}
                 >
                     <span style={{ color: "var(--primary-color)", fontSize: "34px", fontWeight: "700", lineHeight: "38px", marginBottom: "30px" }}>
-                        We Construct and Manage Places and Infrastructures
+                        Nous Construisons et Gérons des Espaces et des Infrastructures
                     </span>
 
                     <InlineIconDetails
-                        title='General Contract'
-                        description='Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum'
+                        title='Contrat Général'
+                        description='Des solutions complètes pour vos projets, de la conception à la réalisation.'
                         icon={<img src={process.env.PUBLIC_URL + "/images/engineer.png"} alt="General Contract" />}
                     />
 
                     <InlineIconDetails
-                        title='Project Planning'
-                        description='Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum'
+                        title='Planification de Projets'
+                        description="Conception sur mesure pour répondre à vos besoins tout en optimisant l'efficacité énergétique."
                         icon={<img src={process.env.PUBLIC_URL + "/images/ruler.png"} alt="Project Planning" />}
                     />
 
                     <InlineIconDetails
-                        title='Refurbishment'
-                        description='Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum'
+                        title='Rénovation'
+                        description='Transformez vos espaces. Esthétique et fonctionnalité pour un environnement moderne et confortable.'
                         icon={<img src={process.env.PUBLIC_URL + "/images/measuring-tool.png"} alt="Refurbishment" />}
                     />
                 </RectangleContainer>
@@ -69,10 +69,10 @@ function Home() {
 
             <SectionCard
                 route="/about-us"
-                name="About Us"
-                title="With our knowledge we guarente success"
-                subtitle="Fusce id hendrerit lectus. Morbi vitae tortor sed turpis feugiat congue"
-                description="Cras tincidunt tellus at mi tristique rhoncus. Etiam dapibus rutrum leo consectetur accumsan. Vivamus viverra ante turpis, dignissim condimentum elit egestas sit amet. Phasellus faucibus pellentesque"
+                name="À propos de nous"
+                title="Bien plus qu'un simple savoir-faire"
+                subtitle="Avec notre expertise, nous garantissons votre succès."
+                description="Thermosolis, c'est une équipe passionnée et dévouée qui met son expertise en plomberie, chauffage, pompes à chaleur, ventilation et climatisation au service de votre confort. Nous transformons des espaces en véritables havres de bien-être grâce à notre engagement envers l'esthétique, la fonctionnalité et l'efficacité énergétique."
                 image={<img src={process.env.PUBLIC_URL + "/images/about-us.png"} alt="With our knowledge we guarente success" />}
             />
 
@@ -82,20 +82,20 @@ function Home() {
                     services={[
                         {
                             icon: process.env.PUBLIC_URL + "/images/construction.png",
-                            title: "Research & Analysis",
-                            description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                            title: "Plomberie & Chauffage",
+                            description: "Des solutions complètes pour la plomberie et le chauffage, garantissant votre confort toute l'année.",
                             route: "/general-contract",
                         },
                         {
                             icon: process.env.PUBLIC_URL + "/images/houses.png",
-                            title: "Industry Development",
-                            description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                            title: "Pompes à Chaleur",
+                            description: "Choisissez la pompe à chaleur idéale pour votre espace, alliant confort et efficacité énergétique.",
                             route: "/project-planning",
                         },
                         {
                             icon: process.env.PUBLIC_URL + "/images/industrial.png",
-                            title: "Production Launch",
-                            description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                            title: "Ventilation & Climatisation",
+                            description: "Circulation d'air optimale et température idéale grâce à nos solutions de ventilation et de climatisation.",
                             route: "/refurbishment",
                         },
                     ]}
@@ -104,33 +104,33 @@ function Home() {
 
             <SectionProjects
                 route="/projects"
-                name="Our Works"
-                title="Our Special Projects"
+                name="Nos travaux"
+                title="Nos Projets récents"
                 projects={[
                     {
                         image: "/images/projects/project-1.png",
                         title: "Project Name",
-                        description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                        description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum1",
                     },
                     {
                         image: "/images/projects/project-2.png",
                         title: "Project Name",
-                        description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                        description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum2",
                     },
                     {
                         image: "/images/projects/project-3.png",
                         title: "Project Name",
-                        description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                        description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum3",
                     },
                     {
                         image: "/images/projects/project-4.png",
                         title: "Project Name",
-                        description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                        description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum4",
                     },
                     {
                         image: "/images/projects/project-5.png",
                         title: "Project Name",
-                        description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                        description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum5",
                     }
                 ]}
             />
@@ -141,26 +141,37 @@ function Home() {
 
             <SectionTestimonials
                 route="/testimonials"
-                name="Testimonials"
-                title="Our Clients Say"
+                name="Témoignages"
+                title="Ils nous font confiance"
                 testimonials={[
                     {
-                        name: "Katy Grey",
-                        title: "CEO Grey Industries",
-                        description: "lorem 51 dolor sit amet, consectetur adipiscing elit. Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum. lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                        name: "Sophie Martin",
+                        title: "Fondatrice, Martin & Co",
+                        description: "Travailler avec votre équipe a été une expérience incroyable. Vous avez su comprendre nos besoins et livrer un produit qui a dépassé nos attentes. Nous sommes ravis des résultats obtenus et nous recommandons vivement vos services professionnels.",
                     },
                     {
-                        name: "John Doe",
-                        title: "CEO Grey Industries",
-                        description: "Quisque 65 erat ac orci blandit, in sollicitudin tellus vestibulum",
+                        name: "Alexandre Dupont",
+                        title: "Directeur Marketing, Dupont Industries",
+                        description: "Les solutions que vous avez développées pour notre entreprise ont eu un impact significatif sur notre croissance. Votre expertise en matière de stratégie numérique et de développement web a été inestimable. Merci pour votre engagement exceptionnel.",
                     },
                     {
-                        name: "John Doe",
-                        title: "CEO",
-                        description: "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
-                    }
+                        name: "Laura Tremblay",
+                        title: "CEO, Tremblay Tech",
+                        description: "Je suis impressionnée par la qualité du travail fourni par votre équipe. Votre attention aux détails et votre capacité à répondre à nos besoins spécifiques ont été remarquables. Nous sommes impatients de continuer à collaborer avec vous.",
+                    },
+                    {
+                        name: "David Gagnon",
+                        title: "Directeur des Opérations, Gagnon Group",
+                        description: "Votre engagement envers la satisfaction du client est tout simplement exemplaire. Votre équipe a su répondre à nos questions et préoccupations de manière proactive et professionnelle. Nous sommes ravis de notre partenariat avec votre entreprise.",
+                    },
+                    {
+                        name: "Isabelle Lavoie",
+                        title: "Responsable des Ressources Humaines, Lavoie Corp",
+                        description: "Nous tenons à vous remercier pour votre dévouement et votre travail acharné pour répondre à nos besoins. Votre expertise technique et votre approche collaborative ont contribué à faire de notre projet un succès retentissant.",
+                    },
                 ]}
             />
+
             <div style={{ marginTop: "111px" }}>
                 <Footer />
             </div>

@@ -30,35 +30,37 @@ function Header() {
             </div>
             <nav className={styles.menu}>
                 <ul className={styles.menuList}>
-                    <li className={styles.menuItem}>Home</li>
+                    <li className={styles.menuItem}>Accueil</li>
                     <li className={styles.menuItem} onMouseEnter={toggleServicesDropdown} onMouseLeave={toggleServicesDropdown}>
                         Services
                         <KeyboardArrowDownIcon />
                         {servicesDropdownOpen && (
                             <div className={styles.dropdown}>
                                 <ul className={styles.dropdownList}>
-                                    <li className={styles.dropdownItem}>Service 1</li>
-                                    <li className={styles.dropdownItem}>Service 2</li>
-                                    <li className={styles.dropdownItem}>Service 3</li>
+                                    <li className={styles.dropdownItem}>Pompe à chaleur</li>
+                                    <li className={styles.dropdownItem}>Climatisation</li>
+                                    <li className={styles.dropdownItem}>Ventilation</li>
+                                    <li className={styles.dropdownItem}>Chauffage</li>
+                                    <li className={styles.dropdownItem}>Plomberie</li>
                                 </ul>
                             </div>
                         )}
                     </li>
                     <li className={styles.menuItem} onMouseEnter={togglePagesDropdown} onMouseLeave={togglePagesDropdown}>
-                        Pages
+                        Photovoltaïque
                         <KeyboardArrowDownIcon />
                         {pagesDropdownOpen && (
                             <div className={styles.dropdown}>
                                 <ul className={styles.dropdownList}>
-                                    <li className={styles.dropdownItem}>Page 1</li>
-                                    <li className={styles.dropdownItem}>Page 2</li>
-                                    <li className={styles.dropdownItem}>Page 3</li>
+                                    <li className={styles.dropdownItem}>Pourquoi le photovoltaïque ?</li>
+                                    <li className={styles.dropdownItem}>Quelle rentabilité pour ma maison ?</li>
+                                    <li className={styles.dropdownItem}>Tarifs et aides financières</li>
                                 </ul>
                             </div>
                         )}
                     </li>
                     <li className={styles.menuItem} onMouseEnter={toggleNewsDropdown} onMouseLeave={toggleNewsDropdown}>
-                        News
+                        Actualités
                         <KeyboardArrowDownIcon />
                         {newsDropdownOpen && (
                             <div className={styles.dropdown}>

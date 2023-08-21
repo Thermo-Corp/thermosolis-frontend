@@ -13,12 +13,16 @@ function Banner() {
     return (
         <div className={styles.banner}>
             <div className={styles.content}>
-                <h1 className={styles.title}>Construction solution<br />
-                    <span className={styles.subtitle}>for everyone</span>
+                <h1 className={styles.title}>Un Habitat Confortable<br />
+                    <span className={styles.subtitle}>Simplement</span>
                 </h1>
-                <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa id possimus beatae ipsum blanditiis assumenda, sint odit eos amet magni explicabo laborum culpa asperiores nostrum. Odit eveniet distinctio necessitatibus possimus. Asperiores minus aliquam tempore, ea a, ducimus illo atque culpa non, tempora cumque fugiat! Quia minima facere officiis ea voluptatem iusto illum asperiores. Laborum at provident voluptatum ipsum itaque! Beatae iure aliquid placeat ipsum atque aspernatur sequi ipsam est facilis sed omnis minima ducimus</p>
+                <p className={styles.description}>
+                    Thermosolis, votre partenaire de confiance en plomberie, chauffage, pompes à chaleur, ventilation et climatisation. Nous façonnons le confort sur mesure pour chaque coin de votre environnement. Profitez d'une expertise solide pour des solutions qui apportent bien plus que la chaleur, la fraîcheur et le flux d'air. Découvrez la perfection du confort, pensé pour vous.
+                    <br /><br />
+                    Créons ensemble un espace où le confort devient réalité.
+                </p>
                 <Button variant="contained" >
-                    Learn More
+                    En savoir plus &nbsp;
                     <ArrowRightAltIcon />
                 </Button>
             </div>

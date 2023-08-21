@@ -12,9 +12,9 @@ function TopLevel() {
     return (
         <div className={styles.topLevel}>
             <div className={styles.link}>
-                <span>Support</span>
-                <span>Partners</span>
-                <span>Careers</span>
+                <span className={styles.linkItem}>Support</span>
+                <span className={styles.linkItem}>Partenaires</span>
+                <span className={styles.linkItem}>Devis gratuit</span>
             </div>
             <div className={styles.social}>
                 <FacebookIcon className={styles.icon} />
