@@ -24,15 +24,15 @@ function Home() {
 
                 <RectangleContainer backgroundColor="var(--primary-color)" >
                     <span style={{ fontSize: "100px", fontWeight: "700", lineHeight: "84px", color: "#FFF" }}>147</span>
-                    <p style={{ color: "#FFF", fontSize: "22px", fontWeight: "400", lineHeight: "22px" }}>Projects Completed</p>
+                    <p style={{ color: "#FFF", fontSize: "22px", fontWeight: "400", lineHeight: "22px" }}>Projets réalisés</p>
                 </RectangleContainer>
 
                 <RectangleContainer backgroundColor="var(--secondary-color)" >
                     <span style={{ fontSize: "100px", fontWeight: "700", lineHeight: "84px", color: "#FFF" }}>25+</span>
-                    <p style={{ color: "#FFF", fontSize: "22px", fontWeight: "400", lineHeight: "22px" }}>Years of Experience</p>
+                    <p style={{ color: "#FFF", fontSize: "22px", fontWeight: "400", lineHeight: "22px" }}>Années d'expérience</p>
                 </RectangleContainer>
 
-                <RectangleContainer width="501px" height="549px"
+                <RectangleContainer width="501px" height="fit-content"
                     style={{
                         borderTop: "7px solid var(--tertiary-color)",
                         position: "relative",
@@ -44,24 +44,24 @@ function Home() {
                     }}
                 >
                     <span style={{ color: "var(--primary-color)", fontSize: "34px", fontWeight: "700", lineHeight: "38px", marginBottom: "30px" }}>
-                        We Construct and Manage Places and Infrastructures
+                        Nous Construisons et Gérons des Espaces et des Infrastructures
                     </span>
 
                     <InlineIconDetails
-                        title='General Contract'
-                        description='Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum'
+                        title='Contrat Général'
+                        description='Des solutions complètes pour vos projets, de la conception à la réalisation.'
                         icon={<img src={process.env.PUBLIC_URL + "/images/engineer.png"} alt="General Contract" />}
                     />
 
                     <InlineIconDetails
-                        title='Project Planning'
-                        description='Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum'
+                        title='Planification de Projets'
+                        description="Conception sur mesure pour répondre à vos besoins tout en optimisant l'efficacité énergétique."
                         icon={<img src={process.env.PUBLIC_URL + "/images/ruler.png"} alt="Project Planning" />}
                     />
 
                     <InlineIconDetails
-                        title='Refurbishment'
-                        description='Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum'
+                        title='Rénovation'
+                        description='Transformez vos espaces. Esthétique et fonctionnalité pour un environnement moderne et confortable.'
                         icon={<img src={process.env.PUBLIC_URL + "/images/measuring-tool.png"} alt="Refurbishment" />}
                     />
                 </RectangleContainer>

@@ -31,7 +31,7 @@ function Footer() {
                         <InstagramIcon className={styles.icon} />
                     </div>
 
-                    <span className={styles.slogan}>With our knowledge we guarantee success</span>
+                    <span className={styles.slogan}>Créons ensemble un espace où le confort devient réalité.</span>
                 </div>
             </div>
             <div className={styles.rightContainer}>
